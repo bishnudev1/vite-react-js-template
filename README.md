@@ -27,5 +27,46 @@ npm run dev
 ```bash
 http://127.0.0.1:5173/
 ```
-![](React-Vite.png)
+![](vitereact.png)
 <p align="center"> Vite + React Demo </p>
+
+## How to Deploy Vite-React App on Netlify ?
+- Make a Production Build
+```bash
+npm run build
+```
+- To get the Preview Build of App
+```bash
+npm run preview
+```
+- Check the Production Build
+```bash
+ http://127.0.0.1:4173/
+ ```
+ - Install Netlify in your terminal
+ ```bash
+ npm i -g netlify-cli
+ ```
+ - Init the App
+ ```bash
+ ntl init
+ ```
+ - Select ```Create & configure a new site```
+ - Add a Team & Site(Optional) name...
+ ```bash
+ Site Created
+
+Admin URL: https://app.netlify.com/sites/super-cool-site-by-bishnudev1
+URL:       https://super-cool-site-by-bishnudev1.netlify.app
+Site ID:   95315748-07c6-4f67-afbb-3aca601e5a37
+ ```
+ - After Initially(Insucure) Deployment is done now add your github credintials for accessing Security Key
+ - Run Build Comman
+ ```bash
+ vite build
+ ```
+ - Add ```dist``` Folder for final Deployment
+ ```bash
+ netlify deploy --prod
+ ```
+ - Access it https://super-cool-site-by-bishnudev1.netlify.app
